@@ -14,7 +14,7 @@ FILE *getfile(char *path)
 	if (f == NULL)
 	{
 		fprintf(stderr, "Error: Can't open  %s\n", path);
-		exit(EXIT_SUCCESS);
+		exit(EXIT_FAILURE);
 	}
 	return (f);
 }
